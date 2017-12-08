@@ -23,12 +23,12 @@ $("#submit-bid").on("click", function(){
 
 
 
-    name = $("#data-employee-name").val();
-    role = $("#data-employee-role").val();
-    startDate = $("#data-employee-start").val();
-    monthsWorked = $("#data-employee-months").val();
-    rate = $("#data-employee-rate").val();
-    total = $("#data-employee-total").val();
+    name = $(".data-employee-name").val();
+    role = $(".data-employee-role").val();
+    startDate = $(".data-employee-start").val();
+    monthsWorked = $(".data-employee-months").val();
+    rate = $(".data-employee-rate").val();
+    total = $(".data-employee-total").val();
 
 
 
@@ -69,12 +69,12 @@ database.ref().on("child_added", function(childSnapshot){
 
 database.ref().orderByChild("dateAdded").limitToLast(1).on("child_added", function(snapshot){
 
-    $("#data-employee-name").text(snapshot.val().name);
-    $("#data-employee-role").text(snapshot.val().role);
-    $("#data-employee-start").text(snapshot.val().startDate);
-    $("#data-employee-months").text(snapshot.val().monthsWorked);
-    $("#data-employee-rate").text(snapshot.val().rate);
-    $("#data-employee-total").text(snapshot.val().total);
+    $(".data-employee-name").text(snapshot.val().name);
+    $(".data-employee-role").text(snapshot.val().role);
+    $(".data-employee-start").text(snapshot.val().startDate);
+    $(".data-employee-months").text(snapshot.val().monthsWorked);
+    $(".data-employee-rate").text(snapshot.val().rate);
+    $(".data-employee-total").text(snapshot.val().total);
 });
 
    // input the information retrieved into the table

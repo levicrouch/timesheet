@@ -16,7 +16,12 @@ $("#submit-bid").on("click", function () {
 
 
 
-
+    name = $("#data-employee-name").val().trim();
+    role = $("#data-employee-role").val().trim();
+    startDate = $("#data-employee-start").val().trim();
+    monthsWorked = $("#data-employee-months").val().trim();
+    rate = $("#data-employee-rate").val().trim();
+    total = $("#data-employee-total").val().trim();
 
 
 

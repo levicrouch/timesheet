@@ -75,7 +75,7 @@ database.ref().orderByChild("dateAdded").limitToLast(1).on("child_added", functi
     $("#data-employee-months").text(snapshot.val().monthsWorked);
     $("#data-employee-rate").text(snapshot.val().rate);
     $("#data-employee-total").text(snapshot.val().total);
-})
+});
 
    // input the information retrieved into the table
 

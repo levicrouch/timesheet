@@ -1,7 +1,15 @@
 // Firebase
-
+var config = {
+    apiKey: "AIzaSyCSfeQbnHeBIGzR2DTEaNcRM59cb8eErE4",
+    authDomain: "codersbay-18996.firebaseapp.com",
+    databaseURL: "https://codersbay-18996.firebaseio.com",
+    projectId: "codersbay-18996",
+    storageBucket: "codersbay-18996.appspot.com",
+    messagingSenderId: "282897436340"
+  };
+  firebase.initializeApp(config);
 // variable to reference firebase
-
+var database = firebase.database();
 // variables to target HTML elements
 var name = "";
 var role = "";
@@ -12,16 +20,15 @@ var total = 0;
 // create .on(“click”) event to trigger HTML elements
 $("#submit-bid").on("click", function(){
     event.preventDefault();
-<<<<<<< HEAD
 
 
 
-    name = $("#data-employee-name").val().trim();
-    role = $("#data-employee-role").val().trim();
-    startDate = $("#data-employee-start").val().trim();
-    monthsWorked = $("#data-employee-months").val().trim();
-    rate = $("#data-employee-rate").val().trim();
-    total = $("#data-employee-total").val().trim();
+    name = $("#data-employee-name").val();
+    role = $("#data-employee-role").val();
+    startDate = $("#data-employee-start").val();
+    monthsWorked = $("#data-employee-months").val();
+    rate = $("#data-employee-rate").val();
+    total = $("#data-employee-total").val();
 
 
 
@@ -35,13 +42,6 @@ $("#submit-bid").on("click", function(){
         total: total
     });
 
-=======
-       // console.log() .on(“click”) event
-    console.log(this);
-    // use .push({}) tp push employee data to the database
-    
-   // console.log() the push method
->>>>>>> 30daedfccb5df9b5f70767a8502f79ea8edd2bad
 });
 
 

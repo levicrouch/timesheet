@@ -9,14 +9,19 @@ var startDate = "";
 var monthsWorked = 0;
 var rate = 0;
 var total = 0;
-
 // create .on(“click”) event to trigger HTML elements
-$("#submit-bid").on("click", function () {
+$("#submit-bid").on("click", function(){
     event.preventDefault();
+<<<<<<< HEAD
 
 
 
-
+    name = $("#data-employee-name").val().trim();
+    role = $("#data-employee-role").val().trim();
+    startDate = $("#data-employee-start").val().trim();
+    monthsWorked = $("#data-employee-months").val().trim();
+    rate = $("#data-employee-rate").val().trim();
+    total = $("#data-employee-total").val().trim();
 
 
 
@@ -30,13 +35,15 @@ $("#submit-bid").on("click", function () {
         total: total
     });
 
+=======
+       // console.log() .on(“click”) event
+    console.log(this);
+    // use .push({}) tp push employee data to the database
+    
+   // console.log() the push method
+>>>>>>> 30daedfccb5df9b5f70767a8502f79ea8edd2bad
 });
 
-   // console.log() .on(“click”) event
-
-// use .push({}) tp push employee data to the database
-
-   // console.log() the push method
 
 // use .on(“child_added”) to retrieve initial employee data from the database
 

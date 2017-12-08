@@ -30,74 +30,49 @@
             <h1 class="text-center">Employee Data Management</h1>
             <p class="text-center">A comprehensive directory of employee billable hours</p>
         </div>
-
-        <!-- <div class="row">
-      <div class="col-lg-12">
-        <div class="panel panel-default">
-          <div class="panel-body">
-            <h3 class="text-center"><strong>Today's Sale</strong>: Pure Vegetarian-Based Coding Knowledge (Chewable)</h3>
-          </div>
-        </div>
-      </div>
-    </div> -->
-
-        <!-- Current Product
-    <div class="row">
-      <div class="col-lg-12">
-        <div class="panel panel-default">
-          <div class="panel-body">
-            <div class="row">
-              <div class="col-sm-4 col-sm-offset-2">
-                <img class="img-responsive thumbnail center-block" src="http://graphitepublications.com/wp-content/uploads/2015/04/5-Coding-Challenges-to-Help-You-Train-Your-Brain.jpg" alt="Coding Brain">
-              </div>
-              <div class="col-sm-6">
-                <h3 class=""><strong>Highest Bidder:</strong> <span id="highest-bidder"></span></h3>
-                <h3 class=""><strong>Current Price:</strong> <span id="highest-price"></span></h3>
-                <hr>
-                <h3 class="">Hurry! <strong><span id="connected-viewers"></span></strong> people have their eyes on the prize.</h3>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div> -->
-
-        <!-- Make Your Bid -->
         <div class="row">
             <div class="col-lg-12">
-                <div class="panel panel-default">
+                <div class="panel panel-primary">
                     <div class="panel-heading">
                         <h3 class="panel-title">Current Employees</h3>
                     </div>
                     <div class="panel-body">
-                        <form>
-                            <div class="form-group">
-                                <table>
-                                    <tr>
-                                        <th>Employee Name</th>
-                                        <th>Role</th>
-                                        <th>Start Date</th>
-                                        <th>Months worked</th>
-                                        <th>Monthly rate ($)</th>
-                                        <th>Total billed ($)</th>
-                                    </tr>
-                                    <tr>
-                                        <td class="data-employee-name">name</td>
-                                        <td class="data-employee-role">role</td>
-                                        <td class="data-employee-start">start</td>
-                                        <td class="data-employee-months">months</td>
-                                        <td class="data-employee-rate">rate</td>
-                                        <td class="data-employee-total">total</td>
-                                    </tr>
-
-
-                                </table>
-                            </div>
-                            <div class="form-group">
-                                <label for="bidder-price">Your Price</label>
-                                <input class="form-control" id="bidder-price" type="number">
-                            </div>
-                            <button class="btn btn-primary" id="submit-bid" type="submit">Submit</button>
+                        <table>
+                            <tr>
+                                <th>Employee Name</th>
+                                <th>Role</th>
+                                <th>Start Date</th>
+                                <th>Months worked</th>
+                                <th>Monthly rate ($)</th>
+                                <th>Total billed ($)</th>
+                            </tr>
+                            <tr>
+                                <td class="data-employee-name">name</td>
+                                <td class="data-employee-role">role</td>
+                                <td class="data-employee-start">start</td>
+                                <td class="data-employee-months">months</td>
+                                <td class="data-employee-rate">rate</td>
+                                <td class="data-employee-total">total</td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+                <div class="panel panel-primary">
+                    <div class="panel-heading">
+                        <h3 class="panel-title">Add Employee</h3>
+                    </div>
+                    <div class="panel-body">
+                        <div class="form-group">
+                            <label for="form-employee-name">Employee Name</label>
+                            <input class="form-control" id="form-employee-name" type="text">
+                            <label for="form-employee-role">Role</label>
+                            <input class="form-control" id="form-employee-role" type="text">
+                            <label for="form-employee-start">Start Date (DD/MM/YY - ex: 08/12/17)</label>
+                            <input class="form-control" id="form-employee-start" type="text">
+                            <label for="form-employee-rate">Monthly Rate</label>
+                            <input class="form-control" id="form-employee-rate" type="number">
+                        </div>
+                        <button class="btn btn-primary" id="submit-bid" type="submit">Submit</button>
                         </form>
                     </div>
                 </div>

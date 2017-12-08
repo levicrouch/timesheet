@@ -1,8 +1,19 @@
 // Firebase
-
+var config = {
+    apiKey: "AIzaSyCSfeQbnHeBIGzR2DTEaNcRM59cb8eErE4",
+    authDomain: "codersbay-18996.firebaseapp.com",
+    databaseURL: "https://codersbay-18996.firebaseio.com",
+    projectId: "codersbay-18996",
+    storageBucket: "codersbay-18996.appspot.com",
+    messagingSenderId: "282897436340"
+  };
+  firebase.initializeApp(config);
 // variable to reference firebase
 var database = firebase.database();
+<<<<<<< HEAD
 
+=======
+>>>>>>> 76cc323069c3c3ab58ee3d94eb12ec90cf56a6bd
 // variables to target HTML elements
 var name = "";
 var role = "";
@@ -16,12 +27,12 @@ $("#submit-bid").on("click", function(){
 
 
 
-    name = $("#data-employee-name").val().trim();
-    role = $("#data-employee-role").val().trim();
-    startDate = $("#data-employee-start").val().trim();
-    monthsWorked = $("#data-employee-months").val().trim();
-    rate = $("#data-employee-rate").val().trim();
-    total = $("#data-employee-total").val().trim();
+    name = $("#data-employee-name").val();
+    role = $("#data-employee-role").val();
+    startDate = $("#data-employee-start").val();
+    monthsWorked = $("#data-employee-months").val();
+    rate = $("#data-employee-rate").val();
+    total = $("#data-employee-total").val();
 
 
 

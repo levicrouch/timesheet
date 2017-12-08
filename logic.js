@@ -46,4 +46,3 @@ $("#submit-bid").on("click", function () {
 
 // use momentJS method to calculate months billed
 
-//* Creating the initial `.on("click")` event that will dynamically trigger new HTML rows to be generated.

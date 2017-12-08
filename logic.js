@@ -10,10 +10,6 @@ var config = {
   firebase.initializeApp(config);
 // variable to reference firebase
 var database = firebase.database();
-<<<<<<< HEAD
-
-=======
->>>>>>> 76cc323069c3c3ab58ee3d94eb12ec90cf56a6bd
 // variables to target HTML elements
 var name = "";
 var role = "";
@@ -43,7 +39,8 @@ $("#submit-bid").on("click", function(){
         startDate: startDate,
         monthsWorked: monthsWorked,
         rate: rate,
-        total: total
+        total: total,
+        dateAdded: firebase.database.ServerValue.TIMESTAMP
     });
 
 });
@@ -60,9 +57,26 @@ database.ref().on("child_added", function(childSnapshot){
     console.log(childSnapshot.val().monthsWorked);
     console.log(childSnapshot.val().rate);
     console.log(childSnapshot.val().total);
+    
 
 
+
+
+}, function(errorObject){
+
+    console.log("Ya dun fucked up: " + errorObject.code);
+});
+
+database.ref().orderByChild("dateAdded").limitToLast(1).on("child_added", function(snapshot){
+
+    $("#data-employee-name").text(snapshot.val().name);
+    $("#data-employee-role").text(snapshot.val().role);
+    $("#data-employee-start").text(snapshot.val().startDate);
+    $("#data-employee-months").text(snapshot.val().monthsWorked);
+    $("#data-employee-rate").text(snapshot.val().rate);
+    $("#data-employee-total").text(snapshot.val().total);
 })
+
    // input the information retrieved into the table
 
 // use momentJS method to calculate months worked 

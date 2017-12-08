@@ -3,8 +3,34 @@
 // variable to reference firebase
 
 // variables to target HTML elements
+var name = "";
+var role = "";
+var startDate = "";
+var monthsWorked = 0;
+var rate = 0;
+var total = 0;
 
 // create .on(“click”) event to trigger HTML elements
+$("#submit-bid").on("click", function () {
+    event.preventDefault();
+
+
+
+
+
+
+
+
+    database.ref().push({
+        name: name,
+        role: role,
+        startDate: startDate,
+        monthsWorked: monthsWorked,
+        rate: rate,
+        total: total
+    });
+
+});
 
    // console.log() .on(“click”) event
 
